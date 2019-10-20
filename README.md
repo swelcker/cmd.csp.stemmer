@@ -3,6 +3,7 @@
 
 Simple implementation of Snowball Stemmer (http://snowballstem.org/) in Java.
 Helpfull to reduce tokens to their core syntax esp. when processing them in Machine Learning Models.
+Used in the Cognitive Service Platform cmd.csp.
 
 
 ### Prerequisites
