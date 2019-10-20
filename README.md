@@ -1,5 +1,5 @@
 # cmd.csp.stemmer
-[![Release](https://jitpack.io/v/swelcker/cmd.csp.stemmer.svg?style=flat-square)](https://jitpack.io/#yunyu/vertx-console)
+[![Release](https://jitpack.io/v/swelcker/cmd.csp.stemmer.svg?style=flat-square)](https://jitpack.io/#swelcker/cmd.csp.stemmer)
 
 Simple implementation of Snowball Stemmer (http://snowballstem.org/) in Java Stemmers for 20+ languages.
 Helpfull to reduce tokens to their core syntax esp. when processing them in Machine Learning Models (ML).
