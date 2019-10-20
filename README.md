@@ -35,7 +35,7 @@ To use, merge the following into your POM (or the equivalent into your Gradle bu
 </dependencies>
 ```
 
-Then, import the import cmd.csp.stemmer.*;` in your application :
+Then, import cmd.csp.stemmer.*;` in your application :
 
 ```java
 // Example
