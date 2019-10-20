@@ -27,7 +27,7 @@ To use, merge the following into your POM (or the equivalent into your Gradle bu
 
 <dependencies>
     <dependency>
-        <groupId>cmd.csp.stemmer</groupId>
+        <groupId>cmd.csp</groupId>
         <artifactId>cmd.csp.stemmer</artifactId>
         <version>${cmd.csp.stemmer.version}</version>
     </dependency>
