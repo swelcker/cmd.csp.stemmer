@@ -2,13 +2,10 @@
 
 Simple implementation of Snowball Stemmer (http://snowballstem.org/) in Java
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-There are no prerequisites
+There are no prerequisites or dependencies others than java core
 
 ### Installing/Usage
 
