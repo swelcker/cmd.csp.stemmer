@@ -1,3 +1,5 @@
+![csplogo](https://user-images.githubusercontent.com/12301571/67168219-4d618900-f3a2-11e9-9460-b79eff997c35.PNG)
+
 # cmd.csp.stemmer
 [![Release](https://jitpack.io/v/swelcker/cmd.csp.stemmer.svg?style=flat-square)](https://jitpack.io/#swelcker/cmd.csp.stemmer)
 
