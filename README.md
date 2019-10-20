@@ -10,23 +10,47 @@ These instructions will get you a copy of the project up and running on your loc
 
 There are no prerequisites
 
+### Installing/Usage
+
+To use, merge the following into your POM (or the equivalent into your Gradle build script):
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<properties>
+    <cmd.csp.stemmer.version>1.0.0</cmd.csp.stemmer.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>cmd.csp.stemmer</groupId>
+        <artifactId>cmd.csp.stemmer</artifactId>
+        <version>${cmd.csp.stemmer.version}</version>
+    </dependency>
+</dependencies>
 ```
-Give examples
+
+Then, create a `WebConsoleRegistry` in your application with a specified path, add the pages you wish to display, and mount it to a router:
+
+```java
+// Example with several pages loaded
+WebConsoleRegistry.create("/admin")
+        // Add pages
+        .addPage(MetricsConsolePage.create(dropwizardRegistry))
+        .addPage(ServicesConsolePage.create(discovery))
+        .addPage(LoggingConsolePage.create())
+        .addPage(CircuitBreakersConsolePage.create())
+        .addPage(ShellConsolePage.create())
+        .addPage(HealthConsolePage.create(healthChecks))
+        .setCacheBusterEnabled(true) // Adds random query string to scripts
+        // Mount to router
+        .mount(vertx, router);
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -39,13 +63,13 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/swelcker/cmd.csp.stemmer/tags). 
 
 ## Authors
 
-* **Stefan Welcker** - *Initial work* 
+* **Stefan Welcker** - *Modifications* 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/swelcker/cmd.csp.stemmer/contributors) who participated in this project.
 
 ## License
 
