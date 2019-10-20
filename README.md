@@ -35,21 +35,55 @@ To use, merge the following into your POM (or the equivalent into your Gradle bu
 </dependencies>
 ```
 
-Then, create a `WebConsoleRegistry` in your application with a specified path, add the pages you wish to display, and mount it to a router:
+Then, import the import cmd.csp.stemmer.*;` in your application :
 
 ```java
-// Example with several pages loaded
-WebConsoleRegistry.create("/admin")
-        // Add pages
-        .addPage(MetricsConsolePage.create(dropwizardRegistry))
-        .addPage(ServicesConsolePage.create(discovery))
-        .addPage(LoggingConsolePage.create())
-        .addPage(CircuitBreakersConsolePage.create())
-        .addPage(ShellConsolePage.create())
-        .addPage(HealthConsolePage.create(healthChecks))
-        .setCacheBusterEnabled(true) // Adds random query string to scripts
-        // Mount to router
-        .mount(vertx, router);
+// Example
+import cmd.csp.stemmer.*;
+
+private SnowballStemmer stemmer;
+private Locale locale = null;
+...
+		if(this.locale==null) {
+			this.locale = Locale.getDefault();
+		}
+...
+		switch(locale.getISO3Language().toLowerCase()){
+			case "ara":stemmer=new ArabicStemmer();break;
+			case "dan":stemmer=new DanishStemmer();break;
+			case "nld":stemmer=new DutchStemmer();break;
+			case "eng":stemmer=new EnglishStemmer();break;
+			case "fin":stemmer=new FinnishStemmer();break;
+			case "fra":stemmer=new FrenchStemmer();break;
+			case "deu":stemmer=new GermanStemmer();break;
+			case "hun":stemmer=new HungarianStemmer();break;
+			case "ind":stemmer=new IndonesianStemmer();break;
+			case "gle":stemmer=new IrishStemmer();break;
+			case "ita":stemmer=new ItalianStemmer();break;
+			case "nep":stemmer=new NepaliStemmer();break;
+			case "nor":stemmer=new NorwegianStemmer();break;
+			case "por":stemmer=new PortugueseStemmer();break;
+			case "ron":stemmer=new RomanianStemmer();break;
+			case "spa":stemmer=new SpanishStemmer();break;
+			case "rus":stemmer=new RussianStemmer();break;
+			case "swe":stemmer=new SwedishStemmer();break;
+			case "tam":stemmer=new TamilStemmer();break;
+			case "tur":stemmer=new TurkishStemmer();break;
+			default:stemmer=new NaiveStemmer();break;
+		}
+        
+        // Then set the token to be stemmed
+        String tkn = "Testvariable";
+        String result = "";
+            stemmer.setCurrent(tkn);
+        // call to stemm
+            stemmer.stem();
+        // get/use the result
+            result = stemmer.getCurrent();
+
+...
+
+
 ```
 
 ## Built With
