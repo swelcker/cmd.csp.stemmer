@@ -17,24 +17,17 @@ There are no prerequisites or dependencies others than java core
 To use, merge the following into your POM (or the equivalent into your Gradle build script):
 
 ```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
+<repository>
+  <id>github</id>
+  <name>GitHub swelcker Apache Maven Packages</name>
+  <url>https://maven.pkg.github.com/swelcker</url>
+</repository>
 
-<properties>
-    <cmd.csp.stemmer.version>1.0.0</cmd.csp.stemmer.version>
-</properties>
-
-<dependencies>
-    <dependency>
-        <groupId>cmd.csp</groupId>
-        <artifactId>cmd.csp.stemmer</artifactId>
-        <version>${cmd.csp.stemmer.version}</version>
-    </dependency>
-</dependencies>
+<dependency>
+  <groupId>cmd.csp</groupId>
+  <artifactId>cspstemmer</artifactId>
+  <version>1.0.0</version>
+</dependency>
 ```
 
 Then, import cmd.csp.stemmer.*;` in your application :
