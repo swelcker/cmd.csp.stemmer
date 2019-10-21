@@ -34,7 +34,7 @@ Then, import cmd.csp.stemmer.*;` in your application :
 
 ```java
 // Example
-import cmd.csp.stemmer.*;
+import cspstemmer.*;
 
 private SnowballStemmer stemmer;
 private Locale locale = null;
