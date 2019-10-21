@@ -5,4 +5,4 @@
  * @author swelcker
  *
  */
-package cmd.csp.stemmer;
+package cspstemmer;

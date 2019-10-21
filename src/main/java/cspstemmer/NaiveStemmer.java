@@ -2,7 +2,7 @@
  * Copyright (C) 2019 S.Welcker
  *
  */
-package cmd.csp.stemmer;
+package cspstemmer;
 
 /**
  *

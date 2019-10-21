@@ -5,9 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cmd.csp</groupId>
-    <artifactId>cmd.csp.stemmer</artifactId>
+    <artifactId>cspstemmer</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub swelcker Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/swelcker/cmd.csp.stemmer</url>
+        </repository>
+    </distributionManagement>
 
 
     <build>

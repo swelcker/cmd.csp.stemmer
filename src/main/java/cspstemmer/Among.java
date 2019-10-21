@@ -1,5 +1,5 @@
 
-package cmd.csp.stemmer;
+package cspstemmer;
 import java.lang.reflect.Method;
 public class Among{
 	public Among(String s,int substring_i,int result){

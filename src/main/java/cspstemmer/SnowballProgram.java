@@ -1,4 +1,4 @@
-package cmd.csp.stemmer;
+package cspstemmer;
 import java.lang.reflect.InvocationTargetException;
 import java.io.Serializable;
 public class SnowballProgram implements Serializable{
