@@ -19,7 +19,7 @@ There are no prerequisites or dependencies others than java core
 
 ### Installing/Usage
 
-To use, merge the following into your POM (or the equivalent into your Gradle build script):
+To use, merge the following into your Maven POM (or the equivalent into your Gradle build script):
 
 ```xml
 <repository>
