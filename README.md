@@ -1,8 +1,12 @@
 ![csplogo](https://user-images.githubusercontent.com/12301571/67168219-4d618900-f3a2-11e9-9460-b79eff997c35.PNG)
-
 # cmd.csp.stemmer
-[![Release](https://maven.pkg.github.com/swelcker/cmd.csp.stemmer.svg?style=flat-square)](https://maven.pkg.github.com/swelcker/cmd.csp.stemmer)
-[![Release](https://maven.pkg.github.com/swelcker/cspstemmer.svg?style=flat-square)](https://maven.pkg.github.com/swelcker/cspstemmer)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/swelcker/cmd.csp.stemmer/graphs/commit-activity)
+[![GitHub release](https://img.shields.io/github/release/swelcker/cmd.csp.stemmer.svg)](https://GitHub.com/swelcker/cmd.csp.stemmer/releases/)
+[![GitHub tag](https://img.shields.io/github/tag/swelcker/cmd.csp.stemmer.svg)](https://GitHub.com/swelcker/cmd.csp.stemmer/tags/)
+[![GitHub commits](https://img.shields.io/github/commits-since/swelcker/cmd.csp.stemmer/v1.0.0.svg)](https://GitHub.com/swelcker/cmd.csp.stemmer/commit/)
+[![GitHub contributors](https://img.shields.io/github/contributors/swelcker/cmd.csp.stemmer.svg)](https://GitHub.com/swelcker/cmd.csp.stemmer/graphs/contributors/)
+[![GitHub version](https://badge.fury.io/gh/swelcker%2Fcmd.csp.stemmer.svg)](https://github.com/swelcker/cmd.csp.stemmer)
 
 Simple implementation of Snowball Stemmer (http://snowballstem.org/) in Java with Stemmers for 20+ languages.
 Helpfull to reduce tokens to their core syntax esp. when processing them in Machine Learning Models (ML).
