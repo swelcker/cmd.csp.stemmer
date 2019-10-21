@@ -9,8 +9,8 @@
 [![GitHub version](https://badge.fury.io/gh/swelcker%2Fcmd.csp.stemmer.svg)](https://github.com/swelcker/cmd.csp.stemmer)
 
 Simple implementation of Snowball Stemmer (http://snowballstem.org/) in Java with Stemmers for 20+ languages.
-Helpfull to reduce tokens to their core syntax esp. when processing them in Machine Learning Models (ML).
-Used in the Cognitive Service Platform cmd.csp.
+Helpful to reduce tokens to their core syntax esp. when processing them in Machine Learning Models (ML).
+Used in the Cognitive Service Platform cmd.csp as part of the NLP (Natural Language Processing) features.
 
 
 ### Prerequisites
